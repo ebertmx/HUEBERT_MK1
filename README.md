@@ -1,4 +1,5 @@
 # HUEBERT_MK2
+![HUE Model](./documents/HUE.png)  
 HUEBERT is a remote operate mechanical arm consisting of a main arm (HUE) and a controller arm (BERT).
 
 The system operate over a network and serial connections. 2 PC connect via socket. Each PC is connected to either the HUE or BERT arduino controller via USB.
