@@ -1,4 +1,4 @@
-# HUEBERT_MK2
+# HUEBERT_MK1
 ![HUE Model](./documents/HUE.png)  
 HUEBERT is a remote operate mechanical arm consisting of a main arm (HUE) and a controller arm (BERT).
 
