@@ -1,3 +1,5 @@
+
+
 //** This program handle interaction between the HUE system and a server providing serial data.
 // Currently: Given a 20 byte serial string ended with a \n and consisting of letters and integers,
 //  this code will convert the integer values into positional instruction for the Nema 17 stepper
@@ -203,7 +205,7 @@ void setup()
   //Set motors to home position: Make sure HUE starts from this defined position
   Serial.println("HUE--initiated ");
   microON();
-  homeHUE();
+//  homeHUE();
 
   Serial.println("HUE--standing by; ");
   Serial.println("R");
@@ -387,8 +389,8 @@ int homeHUE ()
   int segment = 2;
   while (abs(alpha_diff) >= 1) {
     int m = alpha_diff /segment - alpha_dir;
-    Serial.print("m: ");
-    Serial.println(m);
+//    Serial.print("m: ");
+//    Serial.println(m);
     alpha.move(m);
 
     while (alpha.isRunning()  &&  (AV_Q1_max > analogRead(pin_Q1) > 0)) {
@@ -405,13 +407,13 @@ int homeHUE ()
     temp = alpha_diff;
     alpha_angle = readQ1();
     alpha_diff = Q_alpha_home - alpha_angle;
-    Serial.println("alpha_angle");
-    Serial.println(alpha_angle);
-    Serial.println("alpha_diff");
-    Serial.println(alpha_diff);
+//    Serial.println("alpha_angle");
+//    Serial.println(alpha_angle);
+//    Serial.println("alpha_diff");
+//    Serial.println(alpha_diff);
     if (temp == alpha_diff) {
       test++;
-      delay(10);
+//      delay(10);
     } else {
       test = 0;
     }
@@ -435,14 +437,14 @@ int homeHUE ()
     }
     temp = beta_diff;
     beta_diff = Q_beta_home - readQ2();
-    Serial.println("beta_angle");
-    Serial.println(beta_angle);
-    Serial.println("beta_diff");
-    Serial.println(beta_diff);
+//    Serial.println("beta_angle");
+//    Serial.println(beta_angle);
+//    Serial.println("beta_diff");
+//    Serial.println(beta_diff);
     //    delay(1000);
     if (temp == beta_diff) {
       test++;
-      delay(50);
+//      delay(50);
     } else {
       test = 0;
     }

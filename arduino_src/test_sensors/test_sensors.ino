@@ -224,7 +224,7 @@ void loop()
 {
   Serial.println(readQ1());
   
-  //Serial.println(readQ2());
+  Serial.println(readQ2());
 
   checkbuttons();
 } //loop
