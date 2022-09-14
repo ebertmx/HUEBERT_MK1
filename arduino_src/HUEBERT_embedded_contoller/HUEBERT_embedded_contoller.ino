@@ -205,10 +205,10 @@ void setup()
   //Set motors to home position: Make sure HUE starts from this defined position
   Serial.println("HUE--initiated ");
   microON();
-//  homeHUE();
+  homeHUE();
 
   Serial.println("HUE--standing by; ");
-  Serial.println("R");
+  //Serial.println("R");
   //-----------------------------
 } //setup
 
@@ -466,8 +466,8 @@ int homeHUE ()
   //    charlie.setCurrentPosition(0);
   //  }
   printmotorposition();
-  Serial.println("HUE--Standing By");
-  Serial.println("E");
+//  Serial.println("HUE--Standing By");
+//  Serial.println("E");
 }
 
 

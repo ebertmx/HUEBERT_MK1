@@ -25,7 +25,7 @@ Q3 = V(3);
 % Map analog values to relative angle
 Q1 = 0.33+ Q1*(2.41-0.33)/(450);
 Q2 = pi-(0.83+ Q2*(pi-0.83)/(1023-530)) -0.88631-Q1-1.84818;
-Q3 = pi - Q3*2*pi/(1024*3);
+Q3 = pi - Q3*2*pi/(1024);
 % RXZ = sqrt(X^2+Z^2)-XC;
 % alpha_YX = atan2 (Y,(RXZ));
 % R_XY = sqrt(RXZ^2 + Y^2);

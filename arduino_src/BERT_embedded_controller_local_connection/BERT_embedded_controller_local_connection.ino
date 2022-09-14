@@ -89,7 +89,7 @@ void setup()
   digitalWrite(3, 1);
   digitalWrite(2, 0);
 
-  Serial.println("BERT is Ready");
+  Serial.println("BERT--standing by; ");
 }
 
 
