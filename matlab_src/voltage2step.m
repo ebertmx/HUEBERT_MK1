@@ -57,7 +57,7 @@ qS3 = Q3; %Angle of assembly reference to front.
 %Map angle to steps for Motor
 S1 = round((3.442 - qS1) / (2 * pi) * 4 *4 * 200);
 S2 =round( (4.114 - qS2) / (2 * pi) * 4 *4 * 200);
-S3 = round((qS3 * 13*4) * 200 / (2 * pi));
+S3 = round((qS3 * 13*4) * 200 / (2 * pi))/4;
 S = [S1 S2 S3];
 return
 end
