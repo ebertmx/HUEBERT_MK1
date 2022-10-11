@@ -569,7 +569,7 @@ int checkbuttons() {
       break;
     case B11011111:
       // Serial.println("MIDDLE");
-      delay(1000);
+      delay(500);
       input_pins = input_pins = B10000000 + ((PINC & B111100) << 1) + (((PINB & B01110) >> 1));
       if (input_pins == B11011111) {
         homeHUE();
