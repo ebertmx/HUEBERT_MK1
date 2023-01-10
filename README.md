@@ -8,3 +8,6 @@ All requirements, design documentation, and implementation can be found in the d
 
 ## Alternate MATLAB Control
 HUE Can be controlled via a MATLAB program using MATLAB's built in arduino package. A simple app is included in the matlab_src folder.
+
+
+![HUE Model](./documents/Screenshot%202023-01-09%20192522.png)  
